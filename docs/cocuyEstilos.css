@@ -96,6 +96,7 @@ to {
 
 
 .contenedor-leyenda {
+    position: relative;
     font-family: sans-serif;
     font-size: 2rem; 
     padding-top: 60px;
@@ -103,7 +104,21 @@ to {
     height: 90px;
     text-align: center;
     margin: 0 30px;
+    animation: mover 5s ease-in-out 
     }
+
+@keyframes mover {
+from{
+top: 300px
+}
+to{
+    top: 0px
+ }
+
+}
+
+
+
 
 @media (min-width:320px){
     .cocuy{

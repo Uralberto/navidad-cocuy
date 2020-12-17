@@ -516,10 +516,10 @@ for(let i = 0; i<=arraySpan.length-1; i++){
 let num = Math.random()
 if(num>.5){  
 arraySpan[i].style.color = "rgb(220, 0, 0)"
-arraySpan[i].style.fontSize = "2rem"
+arraySpan[i].style.fontSize = "1.5rem"
 arraySpan[i].animate({
 fontSize: ["1.5rem", "2rem"],
-fontWeight: ["100", "bold"]
+fontWeight: ["100", "800"]
 }, 3000
 )
 }
@@ -529,7 +529,7 @@ fontWeight: ["100", "bold"]
   arraySpan[i].style.fontSize = "2.5rem"
   arraySpan[i].animate({
     fontSize: ["2.5rem", "2rem"],
-    fontWeight: ["100", "bold"],
+    fontWeight: ["100", "800"],
     }, 5000
     )
 
