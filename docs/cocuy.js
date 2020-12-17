@@ -451,7 +451,7 @@ function animarCapa5() {
     ctx.lineTo(px[1], py[1]);
     ctx.lineTo(px[2], py[2]);
     ctx.fill();
-    ctx.fillStyle = "rgb(15, 237, 226)";
+    ctx.fillStyle = "blue";
 
   }
 
