@@ -525,7 +525,7 @@ fontWeight: ["100", "bold"]
 }
 
  else{
-  arraySpan[i].style.color = "green"
+  arraySpan[i].style.color = "rgb(10, 72, 10)"
   arraySpan[i].style.fontSize = "2.5rem"
   arraySpan[i].animate({
     fontSize: ["2.5rem", "2rem"],
