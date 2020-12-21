@@ -1,7 +1,7 @@
 var tiempoIntervalo = 50;
 var tiempoAnimacion = 2000;
 var lineWidth = 2;
-var factorAltura = .13
+var factorAltura = 0.13;
 
 function animarCapa1() {
   let capa1 = document.getElementById("capa1");
@@ -47,12 +47,19 @@ function animarCapa1() {
     ctx.clearRect(0, 0, width, height);
     ctx.lineWidth = lineWidth;
     ctx.beginPath();
-    ctx.moveTo(pcx[0]-lineWidth, height+lineWidth);
-    ctx.lineTo(pcx[0]-lineWidth, pcy[0]);
+    ctx.moveTo(pcx[0] - lineWidth, height + lineWidth);
+    ctx.lineTo(pcx[0] - lineWidth, pcy[0]);
     ctx.bezierCurveTo(pcx[1], pcy[1], pcx[2], pcy[2], pcx[3], pcy[3]);
     ctx.bezierCurveTo(pcx[4], pcy[4], pcx[5], pcy[5], pcx[6], pcy[6]);
-    ctx.bezierCurveTo(pcx[7], pcy[7], pcx[8], pcy[8], pcx[9]+lineWidth, pcy[9]);
-    ctx.lineTo(pcx[9]+lineWidth, height+lineWidth);
+    ctx.bezierCurveTo(
+      pcx[7],
+      pcy[7],
+      pcx[8],
+      pcy[8],
+      pcx[9] + lineWidth,
+      pcy[9]
+    );
+    ctx.lineTo(pcx[9] + lineWidth, height + lineWidth);
     ctx.fillStyle = "rgb(50, 116, 3)";
     ctx.strokeStyle = "rgb(20, 86, 3)";
     ctx.fill();
@@ -87,8 +94,6 @@ function animarCapa1() {
 }
 
 animarCapa1();
-
-
 
 function animarCapa2() {
   let capa2 = document.getElementById("capa2");
@@ -134,14 +139,21 @@ function animarCapa2() {
     ctx.clearRect(0, 0, width, height);
     ctx.lineWidth = lineWidth;
     ctx.beginPath();
-    ctx.moveTo(pcx[0]-lineWidth, height);
-    ctx.lineTo(pcx[0]-lineWidth, pcy[0]);
+    ctx.moveTo(pcx[0] - lineWidth, height);
+    ctx.lineTo(pcx[0] - lineWidth, pcy[0]);
     ctx.bezierCurveTo(pcx[1], pcy[1], pcx[2], pcy[2], pcx[3], pcy[3]);
     ctx.bezierCurveTo(pcx[4], pcy[4], pcx[5], pcy[5], pcx[6], pcy[6]);
-    ctx.bezierCurveTo(pcx[7], pcy[7], pcx[8], pcy[8], pcx[9]+lineWidth, pcy[9]);
-    ctx.lineTo(pcx[9]+lineWidth, height+lineWidth);
+    ctx.bezierCurveTo(
+      pcx[7],
+      pcy[7],
+      pcx[8],
+      pcy[8],
+      pcx[9] + lineWidth,
+      pcy[9]
+    );
+    ctx.lineTo(pcx[9] + lineWidth, height + lineWidth);
     ctx.fillStyle = "rgb(60, 126, 3)";
-    ctx.strokeStyle ="rgb(30, 96, 3)";
+    ctx.strokeStyle = "rgb(30, 96, 3)";
     ctx.fill();
     ctx.stroke();
   }
@@ -175,8 +187,6 @@ function animarCapa2() {
 }
 
 setTimeout(animarCapa2, tiempoAnimacion);
-
-
 
 function animarCapa3() {
   let capa3 = document.getElementById("capa3");
@@ -283,16 +293,23 @@ function animarCapa3() {
     ctx.clearRect(0, 0, width, height);
     ctx.lineWidth = lineWidth;
     ctx.beginPath();
-    ctx.moveTo(pcx[0]-lineWidth, height);
-    ctx.lineTo(pcx[0]-lineWidth, pcy[0]);
+    ctx.moveTo(pcx[0] - lineWidth, height);
+    ctx.lineTo(pcx[0] - lineWidth, pcy[0]);
     ctx.bezierCurveTo(pcx[1], pcy[1], pcx[2], pcy[2], pcx[3], pcy[3]);
     ctx.bezierCurveTo(pcx[4], pcy[4], pcx[5], pcy[5], pcx[6], pcy[6]);
     ctx.bezierCurveTo(pcx[7], pcy[7], pcx[8], pcy[8], pcx[9], pcy[9]);
     ctx.bezierCurveTo(pcx[10], pcy[10], pcx[11], pcy[11], pcx[12], pcy[12]);
-    ctx.bezierCurveTo(pcx[13], pcy[13], pcx[14], pcy[14], pcx[15]+lineWidth, pcy[15]);
-    ctx.lineTo(pcx[15]+lineWidth, height+lineWidth);
+    ctx.bezierCurveTo(
+      pcx[13],
+      pcy[13],
+      pcx[14],
+      pcy[14],
+      pcx[15] + lineWidth,
+      pcy[15]
+    );
+    ctx.lineTo(pcx[15] + lineWidth, height + lineWidth);
     ctx.fillStyle = "rgb(70, 136, 3)";
-    ctx.strokeStyle =  "rgb(40, 106, 3)";
+    ctx.strokeStyle = "rgb(40, 106, 3)";
     ctx.fill();
     ctx.stroke();
   }
@@ -326,9 +343,6 @@ function animarCapa3() {
 }
 
 setTimeout(animarCapa3, tiempoAnimacion * 2);
-
-
-
 
 function animarCapa4() {
   let capa4 = document.getElementById("capa4");
@@ -374,19 +388,24 @@ function animarCapa4() {
     ctx.clearRect(0, 0, width, height);
     ctx.lineWidth = lineWidth;
     ctx.beginPath();
-    ctx.moveTo(pcx[0]-lineWidth, height);
-    ctx.lineTo(pcx[0]-lineWidth, pcy[0]);
+    ctx.moveTo(pcx[0] - lineWidth, height);
+    ctx.lineTo(pcx[0] - lineWidth, pcy[0]);
     ctx.bezierCurveTo(pcx[1], pcy[1], pcx[2], pcy[2], pcx[3], pcy[3]);
     ctx.bezierCurveTo(pcx[4], pcy[4], pcx[5], pcy[5], pcx[6], pcy[6]);
-    ctx.bezierCurveTo(pcx[7], pcy[7], pcx[8], pcy[8], pcx[9]+lineWidth, pcy[9]);
-    ctx.lineTo(pcx[9]+lineWidth, height+lineWidth);
+    ctx.bezierCurveTo(
+      pcx[7],
+      pcy[7],
+      pcx[8],
+      pcy[8],
+      pcx[9] + lineWidth,
+      pcy[9]
+    );
+    ctx.lineTo(pcx[9] + lineWidth, height + lineWidth);
     ctx.fillStyle = "rgb(80, 146, 3)";
     ctx.strokeStyle = "rgb(50, 116, 3)";
 
-
     ctx.fill();
     ctx.stroke();
-
   }
 
   function crecerCapa4() {
@@ -420,8 +439,6 @@ function animarCapa4() {
 
 setTimeout(animarCapa4, tiempoAnimacion * 3);
 
-
-
 function animarCapa5() {
   let capa5 = document.getElementById("capa5");
   let ctx = capa5.getContext("2d");
@@ -434,9 +451,8 @@ function animarCapa5() {
   let p2x = width;
   let p2y = 0;
 
-  let p3x =  width;
-  let p3y =  height;
-
+  let p3x = width;
+  let p3y = height;
 
   let px = [p1x, p2x, p3x];
   let py = [p1y, p2y, p3y];
@@ -452,7 +468,6 @@ function animarCapa5() {
     ctx.lineTo(px[2], py[2]);
     ctx.fill();
     ctx.fillStyle = "rgb(0, 89, 255)";
-
   }
 
   function crecerCapa5() {
@@ -486,68 +501,66 @@ function animarCapa5() {
 
 setTimeout(animarCapa5, tiempoAnimacion * 4);
 
-
-
-
 // Aniamacion y coloreo de la leyenda "...Feliz Navidad..."
 
-const texto = document.querySelector(".contenedor-leyenda")
+const texto = document.querySelector(".mensaje");
 
-console.log(texto.textContent)
+console.log(texto.textContent);
 
-const contenidoTexto = texto.textContent
-const splitTexto = contenidoTexto.split("")
+const contenidoTexto = texto.textContent;
+const splitTexto = contenidoTexto.split("");
 
-console.log(splitTexto)
+console.log(splitTexto);
 
-texto.textContent = " "
+texto.textContent = " ";
 
-for(let i = 0; i<=splitTexto.length-1; i++){
-texto.innerHTML += "<span>" + splitTexto[i] + "</span>"
+for (let i = 0; i <= splitTexto.length - 1; i++) {
+  texto.innerHTML += "<span>" + splitTexto[i] + "</span>";
 }
 
+let arraySpan = texto.querySelectorAll("span");
 
-let arraySpan= texto.querySelectorAll("span")
+let conteo = 0;
 
-let conteo = 0
-
-function colorearLetras(){
-for(let i = 0; i<=arraySpan.length-1; i++){
-let num = Math.random()
-if(num>.5){  
-arraySpan[i].style.color = "rgb(220, 0, 0)"
-arraySpan[i].style.fontSize = "1.5rem"
-arraySpan[i].animate({
-fontSize: ["1.5rem", "2rem"],
-fontWeight: ["100", "800"]
-}, 3000
-)
-}
-
- else{
-  arraySpan[i].style.color = "rgb(10, 72, 10)"
-  arraySpan[i].style.fontSize = "2.5rem"
-  arraySpan[i].animate({
-    fontSize: ["2.5rem", "2rem"],
-    fontWeight: ["100", "800"],
-    }, 5000
-    )
-
-}
-}
-conteo++
-if(conteo>1000){
-  clearInterval(iterarColorear)
-}
-}
-
-let iterarColorear = setInterval(colorearLetras, 4000)
-
-
-
-function agregarClase(){
-  for(let i = 0; i<=arraySpan.length-1; i++){
-  arraySpan[i].classList.add("animar1")}
+function colorearLetras() {
+  for (let i = 0; i <= arraySpan.length - 1; i++) {
+    let num = Math.random();
+    if (num > 0.5) {
+      arraySpan[i].style.color = "rgb(220, 0, 0)";
+      arraySpan[i].animate(
+        {
+          fontSize: ["2.5rem", "3rem"],
+          fontWeight: ["100", "800"],
+          letterSpacing: ["10px", "2px"],
+          transform: ["rotateZ(0deg)", "rotateZ(10deg)"],
+        },
+        10000, 'ease-in-out',  'forwards'
+      );
+    } else {
+      arraySpan[i].style.color = "rgb(10, 72, 10)";
+      arraySpan[i].animate(
+        {
+          fontSize: ["3.0rem", "2.5rem"],
+          fontWeight: ["100", "800"],
+          letterSpacing: ["2px", "10px"],
+          transform: ["rotateZ(0deg)", "rotateZ(-10deg)"],
+        },
+        10000, 'ease-in-out', 'forwards'
+      );
+    }
   }
+  conteo++;
+  if (conteo > 1000) {
+    clearInterval(iterarColorear);
+  }
+}
+colorearLetras();
+let iterarColorear = setInterval(colorearLetras, 10000);
 
-  agregarClase()
+function agregarClase() {
+  for (let i = 0; i <= arraySpan.length - 1; i++) {
+    arraySpan[i].classList.add("animar1");
+  }
+}
+
+agregarClase();
