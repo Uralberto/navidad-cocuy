@@ -532,7 +532,6 @@ function colorearLetras() {
           fontSize: ["2.5rem", "3rem"],
           fontWeight: ["100", "800"],
           letterSpacing: ["10px", "2px"],
-          transform: ["rotateZ(0deg)", "rotateZ(10deg)"],
         },
         10000, 'ease-in-out',  'forwards'
       );
@@ -543,7 +542,6 @@ function colorearLetras() {
           fontSize: ["3.0rem", "2.5rem"],
           fontWeight: ["100", "800"],
           letterSpacing: ["2px", "10px"],
-          transform: ["rotateZ(0deg)", "rotateZ(-10deg)"],
         },
         10000, 'ease-in-out', 'forwards'
       );

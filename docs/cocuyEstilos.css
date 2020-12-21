@@ -11,7 +11,6 @@ html {
 .contenedor-principal {
     width: 90%;
     margin: 5%;
-    border: 1px solid rgb(91, 213, 91);
     background-color: rgb(158, 255, 242)
 
 }
@@ -21,7 +20,9 @@ html {
     width: 100%;
     animation: escalarCocuy 5s forwards;
     transform-origin: 0 0;
-    border-radius: 2%;
+    /* border-radius: 2%; */
+
+
 }
 
 @keyframes escalarCocuy {
@@ -58,6 +59,7 @@ html {
     width: 100%;
     position: absolute;
     z-index: 10;
+
 }
 
 .cocuy .cocuy__img {
@@ -79,7 +81,8 @@ html {
     background-image: url(./corocoro.JPG);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: cover
+    background-position: cover;
+
 }
 
 .pie-imagen {
@@ -139,5 +142,15 @@ html {
 
 .animar1 {
     transform-origin: center;
+    animation: opac 6s ease-in-out
 }
 
+
+@keyframes opac {
+    from{
+        opacity: 0
+    }
+    to{
+        opacity: 1
+    }
+}
