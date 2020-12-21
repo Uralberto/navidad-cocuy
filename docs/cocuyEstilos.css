@@ -11,7 +11,7 @@ html {
 .contenedor-principal {
     width: 90%;
     margin: 5%;
-    background-color: rgb(158, 255, 242)
+    /* background-color: rgb(158, 255, 242) */
 
 }
 
@@ -20,8 +20,6 @@ html {
     width: 100%;
     animation: escalarCocuy 5s forwards;
     transform-origin: 0 0;
-    /* border-radius: 2%; */
-
 
 }
 
@@ -125,14 +123,27 @@ html {
 
 .contenedor-textos {
     position: relative;
-    top: 5px;
+    top: -20px;
     height: 600px;
     background-image: url(./corocoro.JPG);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: cover;
+    /* animation: moverCorocoro 6s linear forwards */
+}
+
+
+@keyframes moverCorocoro {
+to {
+    top: 0px
+}
 
 }
+
+
+
+
+
 
 .pie-imagen {
     font-family: sans-serif;
@@ -165,27 +176,28 @@ html {
     }
 }
 
+
 @media (min-width:320px) {
     .cocuy {
-        height: 40px;
+        height: 68px;
     }
 }
 
 @media (min-width:375px) {
     .cocuy {
-        height: 42px;
+        height: 76px;
     }
 }
 
 @media (min-width:425px) {
     .cocuy {
-        height: 53px;
+        height: 85px;
     }
 }
 
 @media (min-width:768px) {
     .cocuy {
-        height: 110px;
+        height: 138px;
     }
 }
 
