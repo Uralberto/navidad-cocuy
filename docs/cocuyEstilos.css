@@ -83,13 +83,12 @@ html {
     height: 20px;
     background-position: 100%;
     z-index: 200; 
-    animation: moverNube1  40s linear 9s infinite 
+    animation: moverNube1  40s linear 7s infinite 
 
 }
 
 
 @keyframes moverNube1 {
-   
     to {
         transform: translateX(-200px);
     }
@@ -97,15 +96,17 @@ html {
     }
 
 .cocuy__nube2 {
+    /* display: inline-block; */
     position: absolute;
     top: 4px;
     left: 60%;
+    transform: rotateY(-10deg);
     background-size: cover;
     width: 90px;
     height: 12px;
     background-position: 100%;
     z-index: 200;
-    animation: moverNube2 50s ease 9s infinite 
+    animation: moverNube2 50s ease 7s infinite 
 
 }
 
@@ -113,7 +114,7 @@ html {
 @keyframes moverNube2 {
 
     to {
-        transform: translateX(-150px);
+        transform: translateX(-150px) ;
 }
 
 }
@@ -161,12 +162,12 @@ to {
     height: 90px;
     text-align: center;
     margin: 0 30px;
-    animation: mover 6s ease-in-out
+    animation: moverHaciaArriba 6s ease-in-out
 }
 
 
 
-@keyframes mover {
+@keyframes moverHaciaArriba {
     from {
         top: 300px;
     }
@@ -185,13 +186,19 @@ to {
 
 @media (min-width:375px) {
     .cocuy {
-        height: 76px;
+        height: 77px;
     }
 }
 
 @media (min-width:425px) {
     .cocuy {
-        height: 85px;
+        height: 86px;
+    }
+}
+
+@media (min-width:600px) {
+    .cocuy {
+        height: 112px;
     }
 }
 
@@ -200,6 +207,10 @@ to {
         height: 138px;
     }
 }
+
+
+
+
 
 .animar1 {
     transform-origin: center;
